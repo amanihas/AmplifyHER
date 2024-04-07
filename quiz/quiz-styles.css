@@ -1,0 +1,73 @@
+/* Add or update styles for the answer buttons and grid layout */
+.answer-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin-top: 20px;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.title {
+  color:white;
+}
+
+.answer-button {
+  border: 2px solid #000;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.answer-button:hover {
+  background-color: lightpink;
+}
+
+.question-container {
+  font-size: 20px; /* Example font size */
+  font-weight: bold; /* Example font weight */
+  color: black;
+  margin: 100px auto; /* Top and bottom margin of 50px, left and right margin auto for centering */
+  padding: 40px; /* Increased padding */
+  border-radius: 15px;
+  background-color: #9579e8;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Increased shadow */
+  text-align: center;
+  width: 50%; /* Set a width to limit the container's size */
+  max-width: 600px; /* Maximum width to prevent container from becoming too wide */
+  height: vh; /* 60% of the viewport height, adjust as needed */
+  /*display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+}
+
+.container {
+  background: rgb(72,1,140);
+  background: linear-gradient(153deg, rgba(72,1,140,1) 0%, rgba(76,11,138,1) 25%, rgba(96,33,157,1) 43%, rgba(120,61,200,1) 58%, rgba(144,88,221,1) 80%, rgba(176,99,255,1) 100%);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 20px; /* Example: Change the font size of the question */
+  color: lightpink; /* Example: Change the color of the question text */
+  text-align: center;
+}
+
+p {
+  font-size: 30px; /* Example: Change the font size of the question description */
+  margin-bottom: 10px; /* Example: Add margin below the question description */
+  color: pink;
+  text-align: center;
+}
+
