@@ -1,7 +1,6 @@
-/* Add or update styles for the answer buttons and grid layout */
 .answer-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
   grid-gap: 10px;
   margin-top: 20px;
 }
@@ -10,39 +9,67 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.title {
-  color:white;
+#web-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-align: left;
+  margin-top: 25px;
+  margin-left: 25px;
 }
 
-.answer-button {
+.answer-button, #generatePlaylistBtn {
   border: 2px solid #000;
   border-radius: 8px;
   padding: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-weight: 515;
+  color: white;
+  background-color: #6d3aa0;
 }
 
-.answer-button:hover {
-  background-color: lightpink;
+.answer-button:hover, #generatePlaylistBtn:hover{
+  background-color: #9359ce;
+}
+
+.button-container {
+  height: 600px;
+  position: relative;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#generatePlaylistBtn {
+  height: 100px;
+  width: 300px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .question-container {
-  font-size: 20px; /* Example font size */
-  font-weight: bold; /* Example font weight */
+  font-size: 20px; 
+  font-weight: bold; 
   color: black;
-  margin: 100px auto; /* Top and bottom margin of 50px, left and right margin auto for centering */
-  padding: 40px; /* Increased padding */
+  margin: 100px auto; 
+  padding: 40px; 
   border-radius: 15px;
   background-color: #9579e8;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Increased shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   text-align: center;
-  width: 50%; /* Set a width to limit the container's size */
-  max-width: 600px; /* Maximum width to prevent container from becoming too wide */
-  height: vh; /* 60% of the viewport height, adjust as needed */
-  /*display: flex; /* Use flexbox */
-  flex-direction: column; /* Stack children vertically */
-  justify-content: center; /* Center vertically */
-  align-items: center; /* Center horizontally */
+  width: 50%; 
+  max-width: 600px; 
+  height: vh; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;
 }
 
 .container {
@@ -59,15 +86,14 @@ body {
 }
 
 h2 {
-  font-size: 20px; /* Example: Change the font size of the question */
-  color: lightpink; /* Example: Change the color of the question text */
+  font-size: 20px; 
+  color: purple;
   text-align: center;
 }
 
 p {
-  font-size: 30px; /* Example: Change the font size of the question description */
-  margin-bottom: 10px; /* Example: Add margin below the question description */
-  color: pink;
+  font-size: 30px; 
+  margin-bottom: 10px;
+  color: white;
   text-align: center;
 }
-
